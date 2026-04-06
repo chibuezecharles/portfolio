@@ -7,7 +7,11 @@ const Contact = () => {
 
       <a
         href={`mailto:${contact.email}`}
-        className="border px-6 py-2 border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white"
+        className="border px-6 py-2 rounded"
+        style={{
+          borderColor: 'var(--color-primary)',
+          color: 'var(--color-primary)'
+        }}
       >
         Email Me
       </a>

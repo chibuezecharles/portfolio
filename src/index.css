@@ -1,5 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+
+
+
+@theme {
+  --font-nunito: "Nunito", sans-serif;
+  --font-poppins:"Poppins", sans-serif;
+}
+
+.light {
+  --color-bg: #fcfcfc;
+  --color-bg-alt: #fff;
+  --color-text-color: #555;
+  --color-headingtext-color: #444;
+  --color-primary: #2978b5;
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dark {
+  --color-bg: #23283e;
+  --color-bg-alt: #2a2f4c;
+  --color-text-color: #bdbddd;
+  --color-headingtext-color: #cdcdff;
+  --color-primary: #90a0d9;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
 body {
-  /* background: #F4F6F9; */
-  /* font-family: "DM Sans", sans-serif; */
-  box-sizing: border-box;
+  background: var(--color-bg);
+  color: var(--color-text-color);
+  transition: all 0.3s ease;
+}
+
+.section {
+  background: var(--color-bg-alt);
+  font-family: var(--font-poppins);
+}
+
+.card {
+  background: var(--color-bg-alt);
+  box-shadow: var(--shadow);
 }

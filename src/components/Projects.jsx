@@ -7,7 +7,7 @@ const Projects = () => {
       <h2 className="text-2xl text-center font-bold mb-6">Projects</h2>
 
       <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {projects.map((p, i) => (
+        {projects?.map((p, i) => (
           <ProjectContainer key={i} project={p} />
         ))}
       </div>

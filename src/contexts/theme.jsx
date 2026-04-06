@@ -1,4 +1,4 @@
-// src/contexts/theme.js
+
 import { createContext, useState, useEffect } from 'react'
 
 export const ThemeContext = createContext()
@@ -6,20 +6,27 @@ export const ThemeContext = createContext()
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light')
 
-  // Initialize theme on mount
   useEffect(() => {
     const saved = localStorage.getItem('theme')
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const initialTheme = saved ? saved : prefersDark ? 'dark' : 'light'
+
+    const initialTheme = saved || (prefersDark ? 'dark' : 'light')
+
     setTheme(initialTheme)
-    document.documentElement.classList.toggle('dark', initialTheme === 'dark')
+
+    document.documentElement.classList.remove('light', 'dark')
+    document.documentElement.classList.add(initialTheme)
   }, [])
 
   const toggleTheme = () => {
     setTheme((prev) => {
       const newTheme = prev === 'light' ? 'dark' : 'light'
+
       localStorage.setItem('theme', newTheme)
-      document.documentElement.classList.toggle('dark', newTheme === 'dark')
+
+      document.documentElement.classList.remove('light', 'dark')
+      document.documentElement.classList.add(newTheme)
+
       return newTheme
     })
   }

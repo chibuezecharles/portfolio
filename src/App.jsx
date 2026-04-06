@@ -9,7 +9,7 @@ import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <div className="min-h-screen transition-all duration-300">
       <Header />
 
       <main>
