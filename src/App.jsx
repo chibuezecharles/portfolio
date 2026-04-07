@@ -6,19 +6,22 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+import { motion } from 'framer-motion'
 
 function App() {
   return (
     <div className="min-h-screen transition-all duration-300">
       <Header />
-
-      <main>
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
         <About />
         <Projects />
         <Skills />
         <Contact />
-      </main>
-
+      </motion.main>
       <ScrollToTop />
       <Footer />
     </div>
