@@ -1,6 +1,8 @@
 import { useContext, useState } from 'react'
-import { FaMoon, FaSun, FaBars, FaTimes } from 'react-icons/fa'
+import {FaBars, FaTimes } from 'react-icons/fa'
 import { ThemeContext } from '../contexts/theme'
+import { CiLight } from 'react-icons/ci'
+import { IoIosMoon } from 'react-icons/io'
 
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext)
@@ -36,7 +38,7 @@ const Navbar = () => {
 
       <div className="flex items-center gap-4 ml-2 cursor-pointer">
         <button onClick={toggleTheme} className="text-xl">
-          {theme === 'dark' ? <FaSun style={{width: "20px", height:"20px"}} /> : <FaMoon style={{width: "20px", height:"20px"}} />}
+          {theme === 'dark' ? <CiLight  style={{width: "20px", height:"20px"}} /> : <IoIosMoon style={{width: "20px", height:"20px"}} />}
         </button>
 
         <button className="text-xl md:hidden" onClick={() => setOpen(!open)}>
