@@ -21,7 +21,7 @@ const about = {
   picture: 'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png',
 
   description:
-    'Dedicated Frontend Engineer specializing in React.js, Next.js, Reactive Native and modern UI frameworks, with 4+ years of experience creating responsive, user-friendly web and mobile applications. Known for transforming complex concepts into simple, engaging user experiences, optimizing code for performance, and integrating seamlessly with backend services. Experienced in agile collaboration, problem-solving, and implementing innovative solutions that improve processes and drive measurable results.',
+    'Frontend Engineer focused on building scalable, high-performance web and mobile applications using React.js, Next.js, React Native, and modern UI frameworks. Proven ability to translate complex product requirements into intuitive, user-centric experiences while optimizing performance and ensuring seamless backend integration. Experienced in agile environments, contributing to architecture decisions, and delivering solutions that improve efficiency and drive measurable business outcomes.',
   // resume: 'https://example.com',
   social: {
     linkedin: 'https://www.linkedin.com/in/chuma-chibueze-0ab63718b',
@@ -30,11 +30,11 @@ const about = {
 }
 
 const projects = [
-  // if there are no projects, Projects section won't show up
   {
     id: 1,
     name: 'Advert Application',
-    description:'advertising platform which serves campaigns across high-traffic websites, ensuring optimal performance and user engagement.',
+    description:
+      'Built a high-performance advertising platform for serving campaigns across high-traffic applications, optimizing delivery, performance, and user engagement through efficient state management and scalable UI architecture.',
     stack: ['TypeScript', 'React', 'Chakra UI', 'Tailwind CSS', 'Redux'],
     sourceCode: 'https://github.com/chibuezecharles/Advert-app',
     livePreview: 'https://advert-app.vercel.app/',
@@ -42,18 +42,20 @@ const projects = [
   },
   {
     id: 2,
-    name: 'Project Support System',
-    description:'Project support system that provides a platform for organization to manage and track their projects, support requests etc, ensuring efficient issue resolution and improved user satisfaction.',
-    stack: ['React', 'Chakra UI', 'Redux'],
-    sourceCode: 'https://github.com/chibuezecharles/project-support-system',
-    livePreview: 'https://project-support-system.vercel.app/',
-    image: projectSupportSystem,
+    name: 'Membership Portal',
+    description:
+      'Built a scalable membership management portal with secure authentication and dynamic dashboards, streamlining member administration and improving operational efficiency.',
+    stack: ['TypeScript', 'React', 'Chakra UI', 'Tailwind CSS', 'Redux'],
+    sourceCode: 'https://github.com/chibuezecharles/ICSAN-membership-portal',
+    livePreview: 'https://icsan-membership-portal.vercel.app/',
+    image: membershipPortal,
   },
   {
     id: 3,
     name: 'Case Management System',
-    description:'Case management system that provides a platform for organizations like EFCC etc to manage and track their cases, ensuring efficient issue resolution.',
-    stack: [ 'React', 'Chakra UI', 'Tailwind CSS', 'Redux'],
+    description:
+      'Engineered a case management system for organizations to track and manage cases efficiently, featuring structured workflows and data visibility to support operational decision-making.',
+    stack: ['React', 'Chakra UI', 'Tailwind CSS', 'Redux'],
     sourceCode: 'https://github.com/chibuezecharles/case-management-system',
     livePreview: 'https://case-management-system-psi.vercel.app/',
     image: caseManagementSystem,
@@ -61,26 +63,29 @@ const projects = [
   {
     id: 4,
     name: 'Performance Management System',
-    description:'performance management system with KPI tracking, interactive dashboards, and automated reporting, enabling real-time performance insights for management.',
-    stack: [ 'React', 'Chakra UI', 'Tailwind CSS', 'Redux'],
+    description:
+      'Designed a performance management system with KPI tracking, interactive dashboards, and automated reporting, enabling real-time insights and data-driven decision-making.',
+    stack: ['React', 'Chakra UI', 'Tailwind CSS', 'Redux'],
     sourceCode: 'https://github.com/chibuezecharles/performance-management-system',
     livePreview: 'https://performance-management-system-ruddy.vercel.app/',
     image: pms,
   },
   {
     id: 5,
-    name: 'Membership portal',
-    description:'Membership portal that provides a platform for organizations to manage and track their members, ensuring efficient issue resolution.',
-    stack: [ 'TypeScript', 'React', 'Chakra UI', 'Tailwind CSS', 'Redux'],
-    sourceCode: 'https://github.com/chibuezecharles/ICSAN-membership-portal',
-    livePreview: 'https://icsan-membership-portal.vercel.app/',
-    image: membershipPortal,
+    name: 'Project Support System',
+    description:
+      'Developed a project support system enabling teams to manage projects and track support requests, improving issue resolution workflows and enhancing overall user satisfaction.',
+    stack: ['React', 'Chakra UI', 'Redux'],
+    sourceCode: 'https://github.com/chibuezecharles/project-support-system',
+    livePreview: 'https://project-support-system.vercel.app/',
+    image: projectSupportSystem,
   },
   {
     id: 6,
-    name: 'Digital Product',
-    description:'a platform where users can easily access and purchase digital products and pay later, ensuring a seamless and efficient user experience.',
-    stack: [ 'React', 'Chakra UI',, 'Tailwind CSS', 'TanStack Query'],
+    name: 'Digital Product Platform',
+    description:
+      'Developed a digital product platform enabling users to browse, purchase, and access products with flexible payment options, delivering a seamless and optimized user experience.',
+    stack: ['React', 'Chakra UI', 'Tailwind CSS', 'TanStack Query'],
     sourceCode: 'https://github.com/chibuezecharles/Isl-digital-Product',
     livePreview: 'https://isl-digital-product.vercel.app/',
     image: digitalproduct,
@@ -88,8 +93,9 @@ const projects = [
   {
     id: 7,
     name: 'Snaarp Dashboard',
-    description:'Dashboard for managing and visualizing data related to the Snaarp platform.',
-    stack: [ 'React', 'Tailwind CSS', 'Redux'],
+    description:
+      'Created a data visualization dashboard for monitoring and managing platform metrics, providing clear insights through interactive UI components and optimized state handling.',
+    stack: ['React', 'Tailwind CSS', 'Redux'],
     sourceCode: 'https://github.com/chibuezecharles/snaarp-dashboard',
     livePreview: 'https://snaarp-dashboard-psi.vercel.app/',
     image: snaarpDashboard,
@@ -97,8 +103,9 @@ const projects = [
   {
     id: 8,
     name: 'Task Management System',
-    description:'Task management system that provides a platform for organizations to manage and track their tasks, ensuring efficient issue resolution.',
-    stack: [ 'React', 'Tailwind CSS', 'Redux'],
+    description:
+      'Developed a task management system to organize, track, and manage workflows, improving team productivity and task visibility across projects.',
+    stack: ['React', 'Tailwind CSS', 'Redux'],
     sourceCode: 'https://github.com/chibuezecharles/Task-Management-App',
     livePreview: 'https://task-management-app-eosin-three.vercel.app/',
     image: taskMan,
@@ -106,8 +113,9 @@ const projects = [
   {
     id: 9,
     name: 'Company Website',
-    description:'A company website designed to deliver a seamless navigation experience, effectively showcase the company’s services, and provide users with a simple and convenient way to get in touch.',
-    stack: [ 'React', 'Tailwind CSS', 'Redux'],
+    description:
+      'Built a corporate website focused on usability and performance, delivering seamless navigation, clear service presentation, and optimized user engagement.',
+    stack: ['React', 'Tailwind CSS', 'Redux'],
     sourceCode: 'https://github.com/chibuezecharles/vatebra-website',
     livePreview: 'https://vatebra-website-iota.vercel.app/',
     image: webSite,
