@@ -40,16 +40,7 @@ const projects = [
     livePreview: 'https://advert-app.vercel.app/',
     image: advertApp,
   },
-  {
-    id: 2,
-    name: 'Membership Portal',
-    description:
-      'Built a scalable membership management portal with secure authentication and dynamic dashboards, streamlining member administration and improving operational efficiency.',
-    stack: ['TypeScript', 'React', 'Chakra UI', 'Tailwind CSS', 'Redux'],
-    sourceCode: 'https://github.com/chibuezecharles/ICSAN-membership-portal',
-    livePreview: 'https://icsan-membership-portal.vercel.app/',
-    image: membershipPortal,
-  },
+  
   {
     id: 3,
     name: 'Case Management System',
@@ -70,6 +61,7 @@ const projects = [
     livePreview: 'https://performance-management-system-ruddy.vercel.app/',
     image: pms,
   },
+  
   {
     id: 5,
     name: 'Project Support System',
@@ -89,6 +81,16 @@ const projects = [
     sourceCode: 'https://github.com/chibuezecharles/Isl-digital-Product',
     livePreview: 'https://isl-digital-product.vercel.app/',
     image: digitalproduct,
+  },
+  {
+    id: 2,
+    name: 'Membership Portal',
+    description:
+      'Built a scalable membership management portal with secure authentication and dynamic dashboards, streamlining member administration and improving operational efficiency.',
+    stack: ['TypeScript', 'React', 'Chakra UI', 'Tailwind CSS', 'Redux'],
+    sourceCode: 'https://github.com/chibuezecharles/ICSAN-membership-portal',
+    livePreview: 'https://icsan-membership-portal.vercel.app/',
+    image: membershipPortal,
   },
   {
     id: 7,
